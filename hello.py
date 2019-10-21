@@ -1,13 +1,14 @@
-#!/usr/bin/python3
+""" print a hello world"""
+
 from flask import Flask
 
-app = Flask(__name__)
+APP = Flask(__name__)
 
-@app.route("/")
+@APP.route("/")
 def hello():
+    """   helllo"""
     return "Hello World!"
 
 
-
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")
+    APP.run(host="0.0.0.0")
